@@ -44,9 +44,13 @@ export default function WebcamStream() {
     dispatch(setLoading(true));
 
     try {
-      const res = await axios.post("http://localhost:8000/detect", {
-        image: imageData,
-      });
+      //   const res = await axios.post("http://localhost:8000/detect", {
+      const res = await axios.post(
+        "https://facial-recognition-backend-43990f515a45.herokuapp.com/detect",
+        {
+          image: imageData,
+        }
+      );
       dispatch(setFaces(res.data.faces));
     } catch (err) {
       console.error(err);
