@@ -49,6 +49,11 @@ export default function WebcamStream() {
         "https://facial-recognition-backend-43990f515a45.herokuapp.com/detect",
         {
           image: imageData,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
       dispatch(setFaces(res.data.faces));
