@@ -12,7 +12,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://facial-recognition-web-app-0e67102b26e3.herokuapp.com/"],  # change to frontend URL if changed later
     allow_methods=["*"],
     allow_headers=["*"],
 )
