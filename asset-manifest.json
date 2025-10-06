@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/facial-recognition-website/static/css/main.d347fc5d.css",
+    "main.js": "/facial-recognition-website/static/js/main.e7a99857.js",
+    "static/js/453.b0d25efa.chunk.js": "/facial-recognition-website/static/js/453.b0d25efa.chunk.js",
+    "index.html": "/facial-recognition-website/index.html",
+    "main.d347fc5d.css.map": "/facial-recognition-website/static/css/main.d347fc5d.css.map",
+    "main.e7a99857.js.map": "/facial-recognition-website/static/js/main.e7a99857.js.map",
+    "453.b0d25efa.chunk.js.map": "/facial-recognition-website/static/js/453.b0d25efa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d347fc5d.css",
+    "static/js/main.e7a99857.js"
+  ]
+}
