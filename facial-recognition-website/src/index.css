@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: source-code-pro, "roboto", sans-serif;
+  background-color: #dedbd2;
+  color: #4a5759;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,100 @@
+.webcam-container {
+  position: relative;
+  width: 50vw;
+  margin: auto;
+}
+
+.webcam-video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.webcam-canvas {
+  display: none;
+}
+
+.webcam-buttons {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
+  gap: 10px; /* space between rows */
+}
+
+/* Start/Stop buttons row */
+.start-stop-buttons {
+  display: flex;
+  gap: 10px; /* space between Start and Stop */
+}
+
+.webcam-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #4a5759;
+  border-radius: 10px;
+  background-color: #b0c4b1;
+  color: #4a5759;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.webcam-buttons button:hover {
+  background-color: #8e9e8f;
+}
+
+.capture-button button {
+  background-color: #a1d6a1;
+  border-color: #4a5759;
+}
+
+.capture-button button:hover {
+  background-color: #7ebc7e;
+}
+
+.face-overlay {
+  position: absolute;
+  border: 2px solid red;
+  pointer-events: none;
+}
+
+/* .webcam-container {
+  position: relative;
+  width: 50vw;
+  margin: auto;
+}
+
+.webcam-video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.webcam-canvas {
+  display: none;
+}
+
+.webcam-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.webcam-buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #4a5759;
+  border-radius: 10px;
+  background-color: #b0c4b1;
+  color: #4a5759;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.webcam-buttons button:hover {
+  background-color: #8e9e8f; 
+}
+
+.face-overlay {
+  position: absolute;
+  border: 2px solid red;
+  pointer-events: none;
+} */
