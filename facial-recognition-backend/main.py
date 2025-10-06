@@ -5,10 +5,15 @@ import cv2
 import numpy as np
 import base64
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+app = FastAPI()
 
 app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
-app = FastAPI()
+@app.get("/")
+async def serve_frontend():
+    return FileResponse(os.path.join("facial-recognition-backend/frontend", "index.html"))
 
 app.add_middleware(
     CORSMiddleware,
