@@ -9,7 +9,7 @@ from fastapi.responses import FileResponse
 
 app = FastAPI()
 
-app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
+# app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
 @app.get("/")
 async def serve_frontend():
