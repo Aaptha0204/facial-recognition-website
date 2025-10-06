@@ -1,0 +1,19 @@
+# === Frontend ===
+facial-recognition-website/node_modules/
+facial-recognition-website/build/
+facial-recognition-website/dist/
+facial-recognition-website/.env
+
+# === Backend ===
+facial-recognition-backend/venv/
+facial-recognition-backend/__pycache__/
+facial-recognition-backend/*.pyc
+facial-recognition-backend/.env
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === IDE files ===
+.vscode/
+.idea/

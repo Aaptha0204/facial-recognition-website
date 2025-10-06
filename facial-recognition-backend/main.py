@@ -4,6 +4,9 @@ from pydantic import BaseModel
 import cv2
 import numpy as np
 import base64
+from fastapi.staticfiles import StaticFiles
+
+app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
 app = FastAPI()
 
