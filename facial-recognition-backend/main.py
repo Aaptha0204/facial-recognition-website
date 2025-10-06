@@ -11,9 +11,9 @@ app = FastAPI()
 
 # app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
-@app.get("/")
-async def serve_frontend():
-    return FileResponse(os.path.join("facial-recognition-backend/frontend", "index.html"))
+# @app.get("/")
+# async def serve_frontend():
+#     return FileResponse(os.path.join("facial-recognition-backend/frontend", "index.html"))
 
 app.add_middleware(
     CORSMiddleware,
