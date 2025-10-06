@@ -17,7 +17,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aaptha0204.github.io/facial-recognition-website/"],  # change to frontend URL if changed later
+    allow_origins=["https://aaptha0204.github.io"],  # change to frontend URL if changed later
     allow_methods=["*"],
     allow_headers=["*"],
 )
