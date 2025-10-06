@@ -4,12 +4,20 @@ from pydantic import BaseModel
 import cv2
 import numpy as np
 import base64
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
+app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
+
+@app.get("/")
+async def serve_frontend():
+    return FileResponse(os.path.join("facial-recognition-backend/frontend", "index.html"))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aaptha0204.github.io"],  # change to frontend URL if changed later
+    allow_origins=["https://facial-recognition-web-app-0e67102b26e3.herokuapp.com/"],  # change to frontend URL if changed later
     allow_methods=["*"],
     allow_headers=["*"],
 )

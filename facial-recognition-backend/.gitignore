@@ -1,9 +1,0 @@
-# === Backend ===
-/venv/
-__pycache__/
-*.pyc
-.env
-
-# === IDE files ===
-.vscode/
-.idea/

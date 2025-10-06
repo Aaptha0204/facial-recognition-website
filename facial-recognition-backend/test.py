@@ -4,10 +4,7 @@ with open("test_face.png", "rb") as f:
     img_bytes = f.read()
 
 img_base64 = "data:image/png;base64," + base64.b64encode(img_bytes).decode()
-# res = requests.post("http://127.0.0.1:8000/detect", json={"image": img_base64})
-res = requests.post("https://facial-recognition-backend-43990f515a45.herokuapp.com/detect", json={"image": img_base64})
-print(res.status_code)
-print(res.text)
+res = requests.post("http://127.0.0.1:8000/detect", json={"image": img_base64})
 faces = res.json().get("faces", [])
 print("Detected faces:", faces)
 
